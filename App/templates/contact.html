@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block titulo %}
+Formulario de Contacto
+{% endblock %}
+{% block contenido %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+	<a class="navbar-brand" href="{{url_for('index')}}">NEducaci&oacute;n</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarColor01">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('about')}}">Quienes Somos <span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('service')}}">Productos y Servicios</a>
+			</li>
+			
+			</li>
+		</ul>
+		<ul class="nav navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('login')}}">Iniciar Sesi&oacute;n</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('register')}}">Registrarse</a>
+			</li>
+		</ul>
+  </div>
+</nav>
+<form class="container col-lg-8" method="POST">
+	<fieldset>
+		<legend class="text-danger text-center">Formulario de Contacto</legend>
+		<div class="form-group">
+			<label for="Nombre">Nombre</label>
+			<input type="text" name="nombre" class="form-control" id="Nombre" placeholder="Nombre" required="required">
+		</div>
+		<div class="form-group">
+			<label for="Apellido">Apellido</label>
+			<input type="text" name="apellido" class="form-control" id="Apellido" placeholder="Apellido" required="required">
+		</div>
+		<div class="form-group">
+			<label for="Email">Correo Elect&oacute;nico</label>
+			<input type="email" name="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Correo Electónico" required="required">
+		</div>
+		<div class="form-group">
+			<label for="Descripcion">Descripci&oacute;n</label>
+			<textarea class="form-control" name="descripcion" id="Descripcion" rows="3" required="required"></textarea>
+		</div>
+		<button type="submit" class="float-right btn btn-danger" style="margin-left:5px ">Enviar</button>
+		<button type="reset" class="float-right btn btn-success">Cancelar</button>
+	</fieldset>
+</form>
+{% endblock %}

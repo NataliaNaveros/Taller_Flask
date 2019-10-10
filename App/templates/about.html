@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block titulo %}
+Quienes Somos
+{% endblock %}
+{% block contenido %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+	<a class="navbar-brand" href="{{url_for('index')}}">NEducaci&oacute;n</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarColor01">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('service')}}">Productos y Servicios</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('contact')}}">Contacto</a>
+			</li>
+			
+			</li>
+		</ul>
+		<ul class="nav navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('login')}}">Iniciar Sesi&oacute;n</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('register')}}">Registrarse</a>
+			</li>
+		</ul>
+  </div>
+</nav>
+<div class="jumbotron">
+	<h1 class="display-3">Misión</h1>
+	<hr class="my-4">
+	<p style="text-align: justify;">Promover una cultura de la innovación y la investigación educativa mediante la conformación de grupos colegiados y la construcción de espacios de colaboración en donde los interesados en la innovación y la investigación educativa puedan generar, difundir y trasferir conocimientos de vanguardia, orientados a la excelencia educativa y con altos valores éticos, que permitan el trabajo multidisciplinario a nivel nacional e internacional y la vinculación con los sectores educativo, social y productivo.</p>
+</div>
+<div class="jumbotron">
+	<h1 class="display-3">Visión</h1>
+	<hr class="my-4">
+	<p style="text-align: justify;">Ser una red consolidada de innovación e investigación educativas, constituida por actores de diferentes entornos internos y externos al IPN, con un alto nivel de autonomía, cuyas relaciones son de tipo distribuido que trascienden las barreras organizativas, institucionales, culturales o territoriales y están basadas en la negociación y la construcción colectiva de objetivos de colaboración; enriquecida con la participación crítica y reflexiva de los agentes educativos que la conforman, enfocada a la generación, difusión y transferencia de conocimientos mediante el manejo de las tecnologías de la información y la comunicación, contribuyendo con ello al fortalecimiento de la innovación e investigación educativas del Instituto y al desarrollo educativo del país.</p>
+</div>
+{% endblock %}

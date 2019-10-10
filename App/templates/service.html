@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block titulo %}
+Productos y Servicios
+{% endblock %}
+{% block contenido %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+	<a class="navbar-brand" href="{{url_for('index')}}">NEducaci&oacute;n</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarColor01">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('about')}}">Quienes Somos <span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('contact')}}">Contacto</a>
+			</li>
+			
+			</li>
+		</ul>
+		<ul class="nav navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('login')}}">Iniciar Sesi&oacute;n</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('register')}}">Registrarse</a>
+			</li>
+		</ul>
+  </div>
+</nav>
+<div class="jumbotron">
+  <h1 class="display-3">Innovaci&oacute;n Educativa</h1>
+  <hr class="my-4">
+  <p style="text-align: justify;">Las convocatorias anuales de proyectos de innovación tienen como objetivo prioritario apoyar la incorporación de Proyectos de Innovación Educativa a la práctica educativa de los centros. Estos proyectos constituyen un marco en el que implementar y comprobar la validez de nuevas propuestas pedagógicas que se adapten a las exigencias de una sociedad en continuo cambio, donde los avances didácticos, metodológicos y técnicos son constantes. Los proyectos deberán proponer un cambio planificado en el aspecto que se quiera mejorar, y seguir un método científico de investigación en el que se formule una hipótesis y se compruebe durante el desarrollo del proyecto. A su vez, la transferibilidad del cambio al resto de los centros educativos será un aspecto que promover.</p>
+</div>
+<div class="jumbotron">
+  <h1 class="display-3">Realidad Virtual</h1>
+  <hr class="my-4">
+  <p style="text-align: justify;">Representa una de las innovaciones tecnológicas que más éxito ha tenido en los últimos años. La realidad aumentada o realidad virtual consiste en la percepción visual de un entorno de escenas y objetos de apariencia real (generado mediante tecnología informática) que crea en el usuario la sensación de estar inmerso en él.
+  Esta tecnología trasladada al sector educativo se traduce en la posibilidad de llevar a cabo un aprendizaje mucho más atractivo e interactivo. Nos brinda la oportunidad de poder “vivir en primera persona” los escenarios que encontramos en los libros de historia, aprender los países y sus capitales viajando a los lugares sin moverte de la clase, entender el funcionamiento de la irrigación sanguínea del cuerpo humano haciéndote pasar por un glóbulo rojo, etc.</p>
+</div>
+<div class="jumbotron">
+  <h1 class="display-3">Educación online</h1>
+  <hr class="my-4">
+  <p style="text-align: justify;">La educación a través de la Red experimentó un notable crecimiento a mediados de la primera década del siglo XXI. Hoy en día, en algunos casos ya se habla de una supremacía del canal online de cara a la transmisión de determinados tipos de conocimiento, particularmente aquellos sujetos a una interacción intensa profesor-alumno y con los alumnos entre sí. No obstante se trata de una tendencia con un funcionamiento cada vez más participativo y bidireccional, en la que los usuarios no se limitan a leer o visualizar contenidos, sino que incrementen su nivel de implicación produciendo sus propios contenidos y publicándolos mediante herramientas sencillas.</p>
+</div>
+<div class="jumbotron">
+  <h1 class="display-3">Educación en el móvil</h1>
+  <hr class="my-4">
+  <p style="text-align: justify;">Además de enviar mensajes, navegar por la web, consultar las redes sociales, hacer selfis o recibir llamadas a la hora más intempestiva, los terminales móviles también pueden contribuir a la formación educativa facilitando el aprendizaje de materias a los escolares. Hasta la fecha, la mayor parte de las directrices políticas relacionadas con los móviles en la escuela han sido para prohibir su uso en el aula, sin embargo, incluso la UNESCO cree más efectivo regular el empleo de la telefonía móvil con fines pedagógicos. Entre las medidas que propone la UNESCO en relación con el uso de los móviles en las aulas nos encontramos con las siguientes: la creación de políticas que fomenten el uso de las TIC –Tecnologías de la Información y la Comunicación– en la educación (para conocer mejor en qué consisten las TIC, os recomiendo leer este post donde se explica el impacto de las TIC en la universidad), la formación a los maestros para que dominen el aprendizaje móvil y la creación de contenidos educativos para el móvil.</p>
+</div>
+<div class="jumbotron">
+  <h1 class="display-3">Inteligencia Artificial</h1>
+  <hr class="my-4">
+  <p style="text-align: justify;">Aunque en los últimos días la inteligencia artificial ha crecido a pasos agigantados, lo cierto es que la idea de que esta tecnología sea implementada en las aulas a nivel educativo todavía tardara unos años más. La Universidad de Stanford (California, EE. UU.) realizó un estudio en septiembre de 2016 según el cual este tipo de tecnologías serán habituales en las aulas en tan solo quince años.
+  Los beneficios que traerá consigo esta implementación a nivel educativo apuntan hacia la personalización del aprendizaje, la expansión del aula y una mayor y mejor interacción entre profesores y alumnos, tanto dentro como fuera de la clase. Sin embargo, también plantea grandes desafíos que afectarán al trabajo, a los ingresos y a otros temas que habrán de asegurar que resulte posible la adaptación de la inteligencia artificial en el sector educativo.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block titulo %}
+Index
+{% endblock %}
+{% block contenido %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+	<a class="navbar-brand" href="{{url_for('index')}}">NEducaci&oacute;n</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarColor01">
+		<ul class="nav navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('about')}}">Quienes Somos <span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('service')}}">Productos y Servicios</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('contact')}}">Contacto</a>
+			</li>
+			
+			</li>
+		</ul>
+		<ul class="nav navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="{{url_for('index')}}" name="cerrar">Cerrar Sesi&oacute;n</a>
+			</li>
+		</ul>
+  </div>
+</nav>
+<div class="jumbotron">
+	<h1 class="display-3">Nuestra Educación</h1>
+	<hr class="my-4">
+	<p style="text-align: justify;">La educación tecnológica, como espacio curricular, se propone promover en la formación de los niños y las niñas tanto el desarrollo de la capacidad de identificar y resolver problemas técnicos como de una mirada que identifique a la tecnología como un aspecto fundamental de la cultura, favoreciendo nuevos vínculos de los alumnos con el medio tecnológico en el que están inmersos. Así, en la escuela los niños deberían ser iniciados en el estudio de lo que algunos autores denominan la cultura tecnológica</p>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="jumbotron col-lg-6" style="margin-right: 10px ">
+			<section>
+				<p><strong>Enlaces Interactivos</strong></p> 
+				<a href="" onmouseover="escribe(' Gamificación\nAprovechar la curiosidad de los alumnos para el aprendizaje puede ser una gran solución. La gamificación pretende un aprendizaje mediante juegos. Se propone a los alumnos diferentes situaciones para que se hagan preguntas. El profesor puede dirigir estos juegos para explicar hechos concretos de la realidad.');" style="text-align: justify;" class="text-danger">Gamificación</a><br>
+				<a href="" onmouseover="escribe(' Aprendizaje colaborativo\nLa Universidad está concebida como una comunidad dedicada al estudio. El aprendizaje colaborativo reúne a un grupo de alumnos con las herramientas necesarias para que por ellos mismos resuelvan problemas que les ayuden a conocer una realidad concreta. ');" style="text-align: justify;" class="text-danger">Aprendizaje colaborativo</a><br>
+				<a href="" onmouseover="escribe(' Cursos online\n¿Estudiar desde casa? La Universidad se ha dado cuenta del potencial de internet. Ahora permite seguir toda clase de cursos con solo tener un ordenador y una conexión a internet. Este tipo de cursos se suelen gestionar a través de una plataforma virtual desde la cual los alumnos pueden tener acceso a los cursos y su material didáctico. ');" style="text-align: justify;" class="text-danger">Cursos online</a><br> 
+			</section>	
+		</div>
+		<div class="jumbotron col-lg-5">
+			<aside>
+				<form name="desplaza" class="form-group">
+					<textarea name="cuadro" rows="8" cols="50" wrap="physical" style="border-radius: 10px; padding-left: 10px; margin-left: 15px; border:4px solid #D33682">Pasa el cursor sobre los enlaces, aqui se vera el texto...</textarea>
+				</form> 
+			</aside>
+		</div>
+	</div>
+</div>
+<footer class="bg-danger">
+	<div class="footer-copyright text-center py-3" style="color: #FFF ">© 2019 NEducaci&oacute;n: Mejor Educaci&oacute;n
+  </div>
+</footer>
+
+ 
+
+<script language="JavaScript">function escribe(frase){document.desplaza.cuadro.value=frase; } </script> 
+{% endblock %}
